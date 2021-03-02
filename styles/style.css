@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  height: 120%;
+  background: -webkit-gradient(linear, left top, right top, from(#af67e9), to(#6565e7));
+  background: linear-gradient(to right, #af67e9, #6565e7);
+}
+
+.container {
+  width: 90%;
+  background: #e7e7e9;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container #box-pc {
+  display: none;
+}
+
+.container .inner {
+  /*hide pc pics*/
+}
+
+.container .inner #pattern-pc,
+.container .inner #ilustration-pc {
+  display: none;
+}
+
+.container .inner img {
+  position: relative;
+  max-width: 100%;
+  left: 50%;
+  top: 0%;
+  -webkit-transform: translate(-55%, -55%);
+          transform: translate(-55%, -55%);
+}
+
+.container .inner #pattern-mobile {
+  left: 50%;
+  top: 0%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -5%);
+          transform: translate(-50%, -5%);
+}
+
+.container .questions {
+  width: 100%;
+}
+
+.container .questions ul {
+  width: 90%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.container .questions ul h1 {
+  position: relative;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-weight: 1000;
+  font-size: 33px;
+}
+
+.container .questions ul li {
+  padding: 10px 0px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.container .questions ul li h2 {
+  padding: 10px 0px;
+  font-weight: 700;
+  font-size: 14px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.container .questions ul li h2:hover {
+  color: #f47c57;
+}
+
+.container .questions ul li .content-item {
+  position: relative;
+  display: none;
+  font-size: 12px;
+  line-height: 1.2rem;
+  color: #1d1e35;
+  cursor: text;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.container .questions ul li img {
+  position: absolute;
+  right: 8%;
+}
+
+.container .questions ul li .rotated {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 60%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 60%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container #box-pc {
+    position: absolute;
+    left: 0%;
+    -webkit-transform: translate(-52%, -5%);
+            transform: translate(-52%, -5%);
+    z-index: 22;
+  }
+  .container .inner {
+    /*hide pc pics*/
+    overflow: hidden;
+  }
+  .container .inner #pattern-pc,
+  .container .inner #ilustration-pc,
+  .container .inner #box-pc {
+    display: block;
+  }
+  .container .inner #pattern-mobile,
+  .container .inner #ilustration-mobile {
+    display: none;
+  }
+  .container .inner #ilustration-pc {
+    position: relative;
+    max-width: 90%;
+    left: 0%;
+    top: 50%;
+    -webkit-transform: translate(-20%, 50%);
+            transform: translate(-20%, 50%);
+  }
+  .container .inner #pattern-pc {
+    position: relative;
+    max-width: 90%;
+    left: 0%;
+    top: 50%;
+    -webkit-transform: translate(-20%, -45%);
+            transform: translate(-20%, -45%);
+    -webkit-filter: contrast(1000%);
+            filter: contrast(1000%);
+    z-index: -1;
+  }
+  .container .questions {
+    width: 100%;
+  }
+  .container .questions ul {
+    width: 100%;
+  }
+  .container .questions ul h1 {
+    text-align: left;
+    font-size: 38px;
+  }
+  .container .questions ul li {
+    width: 90%;
+  }
+  .container .questions ul li h2 {
+    font-size: 16px;
+  }
+  .container .questions ul li .content-item {
+    max-width: 80%;
+    cursor: text;
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+  .container .questions ul li img {
+    right: 5%;
+  }
+  .container .questions ul li .rotated {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+.visible {
+  display: block !important;
+}
+/*# sourceMappingURL=style.css.map */
